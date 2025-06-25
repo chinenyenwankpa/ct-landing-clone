@@ -178,9 +178,9 @@ const App = () => {
           <img src="credit-cards.webp"></img>
         </div>
 
-        <div className="">
+        <div className="services-card-container">
           <div className="left">
-          <span
+          <div
             style={{
               color: "#FFFFFF",
               fontSize: "40px",
@@ -190,8 +190,8 @@ const App = () => {
             }}
           >
             Just Gadgets{" "}
-          </span>
-          <span
+          </div>
+          <div
             style={{
               color: "#D1E0E4",
               fontSize: "21px",
@@ -201,7 +201,7 @@ const App = () => {
             }}
           >
             Shop authentic and affordable gadgets in just a few clicks.{" "}
-          </span>
+          </div>
           <a href="" className="btn3">
             <span
               style={{
@@ -220,7 +220,7 @@ const App = () => {
           </div>
 
           <div className="right">
-          <span
+          <div
             style={{
               color: "#002444",
               fontSize: "40px",
@@ -230,8 +230,8 @@ const App = () => {
             }}
           >
             Bill Payments{" "}
-          </span>
-          <span
+          </div>
+          <div
             style={{
               color: "#1B507E",
               fontSize: "21px",
@@ -241,7 +241,7 @@ const App = () => {
             }}
           >
             Organise and pay all your bills easily and seamlessly{" "}
-          </span>
+          </div>
           <a href="" className="btn3">
             <span
               style={{
