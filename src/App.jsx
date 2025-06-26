@@ -1,34 +1,10 @@
-import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   return (
     <>
-      <nav>
-        <div className="header">
-          <img src="Logo.png" alt="cardtonic logo"></img>
-          <div>
-            <a>Gift Card</a>
-            <a>Product</a>
-            <a>Explore</a>
-            <a>Just Gadget</a>
-          </div>
-
-          <div>
-            <a href="" className="qr-btn">
-              <img
-                src="icons8-qr-code 1.png"
-                alt="qr-code"
-                className="qr-btn"
-              />
-            </a>
-            <a href="" className="btn">
-              get started
-            </a>
-          </div>
-        </div>
-      </nav>
-
+    <Navbar />
       <div className="section-2">
         <div>
           Try our Gift Card Developer API
@@ -180,85 +156,92 @@ const App = () => {
 
         <div className="services-card-container">
           <div className="left">
-          <div
-            style={{
-              color: "#FFFFFF",
-              fontSize: "40px",
-              fontWeight: "600",
-              backgroundColor: "#002444",
-              margin: "5px",
-            }}
-          >
-            Just Gadgets{" "}
-          </div>
-          <div
-            style={{
-              color: "#D1E0E4",
-              fontSize: "21px",
-              fontWeight: "400",
-              backgroundColor: "#002444",
-              margin: "5px",
-            }}
-          >
-            Shop authentic and affordable gadgets in just a few clicks.{" "}
-          </div>
-          <a href="" className="btn3">
-            <span
+            <div
               style={{
-                color: "#00CEDE",
+                color: "#FFFFFF",
+                fontSize: "40px",
+                fontWeight: "600",
+                backgroundColor: "#002444",
+                margin: "5px",
+              }}
+            >
+              Just Gadgets{" "}
+            </div>
+            <div
+              style={{
+                color: "#D1E0E4",
                 fontSize: "21px",
                 fontWeight: "400",
                 backgroundColor: "#002444",
                 margin: "5px",
               }}
             >
-              Explore buy{" "}
-            </span>
-            <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
-          </a>
-          <img src="cards.webp"></img>
+              Shop authentic and affordable gadgets in just a few clicks.{" "}
+            </div>
+            <a href="" className="btn3">
+              <span
+                style={{
+                  color: "#00CEDE",
+                  fontSize: "21px",
+                  fontWeight: "400",
+                  backgroundColor: "#002444",
+                  margin: "5px",
+                }}
+              >
+                Explore buy{" "}
+              </span>
+              <img
+                src="arrow-forward-outline.png"
+                alt="arrow"
+                className="btn3"
+              />
+            </a>
+            <img src="cards.webp"></img>
           </div>
 
           <div className="right">
-          <div
-            style={{
-              color: "#002444",
-              fontSize: "40px",
-              fontWeight: "600",
-              backgroundColor: "#E6DDFD",
-              margin: "5px",
-            }}
-          >
-            Bill Payments{" "}
-          </div>
-          <div
-            style={{
-              color: "#1B507E",
-              fontSize: "21px",
-              fontWeight: "400",
-              backgroundColor: "#E6DDFD",
-              margin: "5px",
-            }}
-          >
-            Organise and pay all your bills easily and seamlessly{" "}
-          </div>
-          <a href="" className="btn3">
-            <span
+            <div
               style={{
-                color: "#7580EF",
+                color: "#002444",
+                fontSize: "40px",
+                fontWeight: "600",
+                backgroundColor: "#E6DDFD",
+                margin: "5px",
+              }}
+            >
+              Bill Payments{" "}
+            </div>
+            <div
+              style={{
+                color: "#1B507E",
                 fontSize: "21px",
                 fontWeight: "400",
                 backgroundColor: "#E6DDFD",
                 margin: "5px",
               }}
             >
-              Explore buy{" "}
-            </span>
-            <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
-          </a>
-          <img src="image.png"></img>
+              Organise and pay all your bills easily and seamlessly{" "}
+            </div>
+            <a href="" className="btn3">
+              <span
+                style={{
+                  color: "#7580EF",
+                  fontSize: "21px",
+                  fontWeight: "400",
+                  backgroundColor: "#E6DDFD",
+                  margin: "5px",
+                }}
+              >
+                Explore buy{" "}
+              </span>
+              <img
+                src="arrow-forward-outline.png"
+                alt="arrow"
+                className="btn3"
+              />
+            </a>
+            <img src="image.png"></img>
           </div>
-          
         </div>
       </div>
     </>
