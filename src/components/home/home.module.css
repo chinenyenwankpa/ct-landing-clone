@@ -1,0 +1,49 @@
+.hero {
+  background-image: url("/src/assets/img/hero-bg.png");
+  background-size: cover;
+}
+
+.heroSection {
+  width: 100%;
+  max-width: 894px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 0;
+  gap: 40px;
+}
+
+.mainHeading {
+  font-size: 64px;
+  text-align: center;
+}
+
+.mainText {
+  font-size: 21px;
+  text-align: center;
+  max-width: 588px;
+  margin: auto;
+}
+
+.apiButton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid #f8f8f9;
+  border-radius: 30px;
+  padding-left: 24px;
+}
+
+.apiButton p {
+  color: #1b507e;
+}
+
+.iconWrapper {
+  background-color: #7580ef;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
