@@ -1,10 +1,17 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 
+import cards from "../src/assets/img/cards.webp";
+import sellCard from "../src/assets/img/sellCard.webp";
+import arrowForward from "../src/assets/img/arrowForward.png";
+import creditCards from "../src/assets/img/creditCards.webp";
+import image from "../src/assets/img/image.png";
+
 const App = () => {
   return (
     <>
     <Navbar />
+
       <div className="section-2">
         <div>
           Try our Gift Card Developer API
@@ -12,7 +19,7 @@ const App = () => {
         </div>
         <div className="big-text">
           Explore virtual cards, gift cards <br />
-          and digital payment solutions
+          and <span style={{color: "#7580EF"}}> digital payment solutions</span>
         </div>
         <div>
           Cardtonic is the best platform to get virtual dollar cards, <br />{" "}
@@ -65,10 +72,10 @@ const App = () => {
             >
               Explore sell{" "}
             </span>
-            <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
+            <img src={arrowForward} alt="arrow" className="btn3" />
           </a>
           </div>
-          <img src="sell-card.webp"></img>
+          <img src={sellCard}></img>
         </div>
 
         <div className="card">
@@ -108,10 +115,10 @@ const App = () => {
             >
               Explore buy{" "}
             </span>
-            <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
+            <img src={arrowForward} alt="arrow" className="btn3" />
           </a>
           </div>
-          <img src="cards.webp"></img>
+          <img src={cards}></img>
         </div>
       </div>
 
@@ -154,10 +161,10 @@ const App = () => {
             >
               Explore dollars{" "}
             </span>
-            <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
+            <img src={arrowForward} alt="arrow" className="btn3" />
           </a>
           </div>
-          <img src="credit-cards.webp"></img>
+          <img src={creditCards}></img>
         </div>
         <div className="services-card-container">
           <div className="left">
@@ -196,12 +203,12 @@ const App = () => {
                 Explore buy{" "}
               </span>
               <img
-                src="arrow-forward-outline.png"
+                src={arrowForward}
                 alt="arrow"
                 className="btn3"
               />
             </a>
-            <img src="cards.webp"></img>
+            <img src={cards}></img>
           </div>
 
           <div className="right">
@@ -240,12 +247,12 @@ const App = () => {
                 Explore buy{" "}
               </span>
               <img
-                src="arrow-forward-outline.png"
+                src={arrowForward}
                 alt="arrow"
                 className="btn3"
               />
             </a>
-            <img src="image.png"></img>
+            <img src={image}></img>
           </div>
         </div>
       </div>
