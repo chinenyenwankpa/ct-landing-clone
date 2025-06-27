@@ -1,12 +1,14 @@
-import Section from "../section/Section";
 import styles from "./navbar.module.css";
+
+import Section from "../section/Section";
+import Button from "../button/Button";
 
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={styles.navbarContainer}>
       <Section>
         <div className={styles.navbar}>
           <img src={logo} alt="cardtonic logo" className={styles.logo} />
@@ -25,13 +27,11 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div>
-            <a href="" className="qr-btn">
-              <img src={qrCodeIcon} alt="qr-code" className="qr-btn" />
-            </a>
-            <a href="" className="btn">
-              get started
-            </a>
+          <div className={styles.buttonContainer}>
+            <button className={styles.qrButton}>
+              <img src={qrCodeIcon} alt="qr-code" />
+            </button>
+            <Button>Get Started</Button>
           </div>
         </div>
       </Section>

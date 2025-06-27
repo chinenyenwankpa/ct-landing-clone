@@ -32,6 +32,11 @@ ul {
   list-style-type: none;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* .header {
   display: flex;
   justify-content: space-between;
@@ -51,18 +56,18 @@ ul {
   margin: 16px;
 } */
 
-.btn {
+/* .btn {
   padding: 20px;
   background-color: #002444;
   color: white;
   border-radius: 50px;
   display: inline-block;
   text-decoration: none;
-  /* height: 10px; */
+  height: 10px;
   width: 100px;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .section-2 {
   display: flex;
@@ -138,11 +143,10 @@ video {
   width: 4px;
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
   background-color: #e5f9fb;
-
 }
 
 .card2 {
