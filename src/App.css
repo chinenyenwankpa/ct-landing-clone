@@ -134,6 +134,13 @@ video {
   width: 4px;
 }
 
+.column{
+  display: flex;
+  flex-direction: column;
+  background-color: #e5f9fb;
+  
+}
+
 .card2 {
   display: flex;
   background: #ffe7df;

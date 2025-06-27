@@ -54,6 +54,7 @@ const App = () => {
 
       <div className="card-container">
         <div className="card">
+          <div className="column">
           <span
             style={{
               color: "#002444",
@@ -90,10 +91,12 @@ const App = () => {
             </span>
             <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
           </a>
+          </div>
           <img src="sell-card.webp"></img>
         </div>
 
         <div className="card">
+          <div className="column">
           <span
             style={{
               color: "#002444",
@@ -131,6 +134,7 @@ const App = () => {
             </span>
             <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
           </a>
+          </div>
           <img src="cards.webp"></img>
         </div>
       </div>
@@ -139,7 +143,8 @@ const App = () => {
 
       <div className="card-container">
         <div className="card2">
-          <span
+          <div className="column">
+            <span
             style={{
               color: "#002444",
               fontSize: "40px",
@@ -175,9 +180,9 @@ const App = () => {
             </span>
             <img src="arrow-forward-outline.png" alt="arrow" className="btn3" />
           </a>
+          </div>
           <img src="credit-cards.webp"></img>
         </div>
-
         <div className="services-card-container">
           <div className="left">
           <div
