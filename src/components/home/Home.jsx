@@ -2,6 +2,7 @@ import styles from "./home.module.css";
 
 import Navbar from "../navbar/Navbar";
 import Section from "../section/Section";
+import Testimonial from "../testimonial/Testimonial";
 
 import cards from "../../../src/assets/img/cards.webp";
 import sellCard from "../../../src/assets/img/sellCard.webp";
@@ -42,12 +43,19 @@ const Home = () => {
         </Section>
       </div>
 
-      <div>
-        <video src="seyi.mp4"> </video>
-      </div>
-      <div className="text1">Gift Cards</div>
+      <Section>
+        <div className={styles.videoWrapper}>
+          <video src="seyi.mp4" className={styles.video} />
+        </div>
+      </Section>
 
-      <div className="card-container">
+      <Section>
+        <div className="text1">Gift Cards</div>
+      </Section>
+
+
+      <Section>
+         <div className="card-container">
         <div className="card">
           <div className="column">
             <span
@@ -180,7 +188,7 @@ const Home = () => {
         </div>
         <div className="services-card-container">
           <div className="left">
-            <div
+            <h1
               style={{
                 color: "#FFFFFF",
                 fontSize: "40px",
@@ -190,7 +198,7 @@ const Home = () => {
               }}
             >
               Just Gadgets{" "}
-            </div>
+            </h1>
             <div
               style={{
                 color: "#D1E0E4",
@@ -260,6 +268,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </Section>
+     
+
+      <Testimonial />
     </div>
   );
 };

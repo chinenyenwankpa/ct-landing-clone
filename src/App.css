@@ -105,26 +105,26 @@ button {
   margin: 30px;
 }
 
-video {
+/* video {
   margin: 30px;
   border-radius: 50px;
-  height: 700px;
-}
+  height: 600px;
+} */
 
 .text1 {
   color: #d1e0e4;
   font-size: 60px;
 }
 
-.card-container {
-  margin: 5px;
-}
+/* .card-container {
+  
+} */
 
 .card {
   display: flex;
   background: #e5f9fb;
   padding: 20px;
-  margin: 40px;
+  margin-top: 40px;
   height: 500px;
   text-align: left;
   border-radius: 30px;
@@ -132,39 +132,37 @@ video {
 }
 
 .card img {
-  border-radius: 0px;
-  height: 500px;
-  width: 500px;
   background-color: #e5f9fb;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .btn3 {
-  height: 4px;
-  width: 4px;
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  background-color: #e5f9fb;
-}
 
 .card2 {
   display: flex;
   background: #ffe7df;
   padding: 20px;
-  margin: 40px;
+  margin-top: 40px;
   height: 500px;
   text-align: left;
   border-radius: 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .card2 img {
-  border-radius: 0px;
-  height: 500px;
-  width: 500px;
   background-color: #ffe7df;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .left {
@@ -174,12 +172,16 @@ video {
   height: 800px;
   background-color: #002444;
   margin: 10px;
+  border: rgb(255, 255, 255);
 }
 
 .left img {
-  height: 500px;
-  width: 500px;
   background-color: #002444;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .right {
@@ -192,9 +194,12 @@ video {
 }
 
 .right img {
-  height: 300px;
-  width: 300px;
   background-color: #e6ddfd;
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .btn3 img {
@@ -204,4 +209,6 @@ video {
 .services-card-container {
   display: flex;
   gap: 40px;
+  margin-top: 40px;
 }
+
