@@ -1,7 +1,38 @@
 .btn {
-  background-color: #002444;
   color: white;
-  padding: 13px 37px;
   border-radius: 50px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.defaultBtn {
+  padding: 13px 37px;
+}
+
+.lgBtn {
+  padding: 45px 161px;
+  border-radius: 100px;
+}
+
+.primaryBtn {
+  background-color: #002444;
+}
+
+.blackBtn {
+  background-color: #000000;
+}
+
+.successBtn {
+  background-color: #01983e;
+}
+
+.textSecondaryBtn {
+  padding: 0;
+  color: #7580ef;
+  background-color: transparent;
+  justify-content: start;
+  gap: 8px;
 }

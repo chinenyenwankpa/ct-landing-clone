@@ -69,6 +69,19 @@
   background-color: #e5f9fb;
 }
 
-/* .card-container{
+.column h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
-} */
+.column p {
+  font-size: 21px;
+  color: #1b507e;
+  margin-bottom: 64px;
+}
+
+.giftCard,
+.services {
+  padding: 100px 0;
+}

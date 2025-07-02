@@ -1,8 +1,25 @@
 import styles from "./button.module.css";
 
-const Button = ({ children }) => {
+const Button = ({ children, size = "default", variant = "primary" }) => {
+  const sizeMap = {
+    default: "defaultBtn",
+    lg: "lgBtn",
+  };
+
+  const variantMap = {
+    primary: "primaryBtn",
+    black: "blackBtn",
+    success: "successBtn",
+    textSecondary: "textSecondaryBtn"
+  };
+
   return (
-    <button className={styles.btn} type="button">
+    <button
+      className={`${styles.btn} ${styles[sizeMap[size]]} ${
+        styles[variantMap[variant]]
+      }`}
+      type="button"
+    >
       {children}
     </button>
   );
