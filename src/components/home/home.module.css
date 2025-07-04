@@ -35,6 +35,13 @@
   padding-left: 24px;
 }
 
+.mutedheading {
+  color: #d1e0e4;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 200px;
+}
+
 .apiButton p {
   color: #1b507e;
 }
@@ -61,12 +68,51 @@
   display: block;
 }
 
+.card {
+  display: flex;
+  background: #e5f9fb;
+  /* padding: 20px; */
+  margin-top: 40px;
+  height: 500px;
+  text-align: left;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  background-color: #e5f9fb;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
+.card2 {
+  display: flex;
+  background: #ffe7df;
+  padding: 20px;
+  margin-top: 40px;
+  height: 500px;
+  text-align: left;
+  border-radius: 30px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card2 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
 .column {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 10px;
-  background-color: #e5f9fb;
+  /* margin: 10px; */
+  padding: 80px;
+  background-color: transparent;
 }
 
 .column h3 {
@@ -81,7 +127,63 @@
   margin-bottom: 64px;
 }
 
-.giftCard,
+/* .column p .whiteP{
+  color: white;
+} */
+
+/* .giftCard,
 .services {
   padding: 100px 0;
+} */
+ 
+.left {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  /* height: 800px; */
+  background-color: #002444;
+  /* margin: 10px; */
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.leftImg {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  height: 800px;
+  background-color: #e6ddfd;
+  /* margin: 10px; */
+}
+
+.dormyAcc{
+  height: 690px;
+  width: 720px;
+}
+
+
+.downloadContainer{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 30px;
+  font-weight: 400;
+  font-size: 21px;
+  /* height: 720px;
+  width: 566px; */
 }

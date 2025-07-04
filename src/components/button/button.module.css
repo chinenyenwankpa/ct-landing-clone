@@ -36,3 +36,11 @@
   justify-content: start;
   gap: 8px;
 }
+
+.textColourBtn{
+  padding: 0;
+  color: #00CEDE;
+  background-color: transparent;
+  justify-content: start;
+  gap: 8px;
+}

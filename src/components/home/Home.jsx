@@ -4,6 +4,8 @@ import Navbar from "../navbar/Navbar";
 import Section from "../section/Section";
 import Testimonial from "../testimonial/Testimonial";
 import Button from "../button/Button";
+import Footer from "../footer/Footer";
+import News from "../news/News";
 
 import cards from "../../assets/img/cards.webp";
 import sellCard from "../../assets/img/sellCard.webp";
@@ -11,6 +13,10 @@ import arrowForward from "../../assets/img/arrow.svg";
 import creditCards from "../../assets/img/creditCards.webp";
 import image from "../../assets/img/image.png";
 import arrowIcon from "../../assets/img/arrow-icon.svg";
+import dormyAcc from "../../assets/img/dormyAcc.png";
+import apple from "../../assets/img/apple.svg";
+import playStore from "../../assets/img/playStore.svg";
+import vector from "../../assets/img/vector.svg"
 
 const Home = () => {
   return (
@@ -49,10 +55,10 @@ const Home = () => {
       </Section>
 
       <Section className={styles.giftCard}>
-        <h1 className="muted-heading">Gift Cards</h1>
+        <h1 className={styles.mutedheading}>Gift Cards</h1>
 
         <div className="card-container">
-          <div className="card">
+          <div className={styles.card}>
             <div className={styles.column}>
               <h3>Sell Gift Cards </h3>
               <p>Instantly convert the gift cards you don't nee to cash. </p>
@@ -64,7 +70,7 @@ const Home = () => {
             <img src={sellCard}></img>
           </div>
 
-          <div className="card">
+          <div className={styles.card}>
             <div className={styles.column}>
               <h3>Buy Gift Cards </h3>
               <p>
@@ -80,133 +86,81 @@ const Home = () => {
           </div>
         </div>
 
-        <h1 className="muted-heading">Services</h1>
+        <h1 className={styles.mutedheading}>Services</h1>
 
         <div className="card-container">
-          <div className="card2">
-            <div className="column">
-              <span
-                style={{
-                  color: "#002444",
-                  fontSize: "40px",
-                  fontWeight: "600",
-                  backgroundColor: "#FFE7DF",
-                  margin: "5px",
-                }}
-              >
-                Virtual Dollar Cards{" "}
-              </span>
-              <span
-                style={{
-                  color: "#1B507E",
-                  fontSize: "21px",
-                  fontWeight: "400",
-                  backgroundColor: "#FFE7DF",
-                  margin: "5px",
-                }}
-              >
+          <div className={styles.card2}>
+            <div className={styles.column}>
+              <h3>Virtual Dollar Cards</h3>
+              <p>
                 Shop online, pay for services, and make international purchases.{" "}
-              </span>
-              <a href="" className="btn3">
-                <span
-                  style={{
-                    color: "#7580EF",
-                    fontSize: "21px",
-                    fontWeight: "400",
-                    backgroundColor: "#FFE7DF",
-                    margin: "5px",
-                  }}
-                >
-                  Explore dollars{" "}
-                </span>
-                <img src={arrowForward} alt="arrow" className="btn3" />
-              </a>
+              </p>
+              <Button variant="textSecondary">
+                <span>Explore dollars</span>
+                <img src={arrowForward} alt="arrow" />
+              </Button>
             </div>
             <img src={creditCards}></img>
           </div>
+
           <div className="services-card-container">
-            <div className="left">
-              <h1
-                style={{
-                  color: "#FFFFFF",
-                  fontSize: "40px",
-                  fontWeight: "600",
-                  margin: "5px",
-                }}
-              >
-                Just Gadgets{" "}
-              </h1>
-              <div
-                style={{
-                  color: "#D1E0E4",
-                  fontSize: "21px",
-                  fontWeight: "400",
-                  backgroundColor: "#002444",
-                  margin: "5px",
-                }}
-              >
-                Shop authentic and affordable gadgets in just a few clicks.{" "}
+            <div className={styles.left}>
+              <div className={styles.column}>
+                <h3>Just Gadgets</h3>
+                <p className={`{styles.whiteP}`}>
+                  Shop authentic and affordable gadgets in just a few clicks.
+                </p>
+                <Button variant="textColoured">
+                  <span>Explore buy</span>
+                  <img src={vector} alt="arrow" />
+                </Button>
               </div>
-              <a href="" className="btn3">
-                <span
-                  style={{
-                    color: "#00CEDE",
-                    fontSize: "21px",
-                    fontWeight: "400",
-                    margin: "5px",
-                  }}
-                >
-                  Explore buy{" "}
-                </span>
-                <img src={arrowForward} alt="arrow" className="btn3" />
-              </a>
-              <img src={cards}></img>
+              <div>
+                <img src={cards} className={styles.leftImg}></img>
+              </div>
             </div>
 
-            <div className="right">
-              <div
-                style={{
-                  color: "#002444",
-                  fontSize: "40px",
-                  fontWeight: "600",
-
-                  margin: "5px",
-                }}
-              >
-                Bill Payments{" "}
+            <div className={styles.right}>
+              <div className={styles.column}>
+                <h3>Bill Payments</h3>
+                <p>Organise and pay all your bills easily and seamlessly </p>
+                <Button variant="textSecondary">
+                  <span>Explore buy</span>
+                  <img src={arrowForward} alt="arrow" />
+                </Button>
               </div>
-              <div
-                style={{
-                  color: "#1B507E",
-                  fontSize: "21px",
-                  fontWeight: "400",
-                  backgroundColor: "#E6DDFD",
-                  margin: "5px",
-                }}
-              >
-                Organise and pay all your bills easily and seamlessly{" "}
+              <div>
+                <img src={image} className={styles.leftImg}></img>
               </div>
-              <a href="" className="btn3">
-                <span
-                  style={{
-                    color: "#7580EF",
-                    fontSize: "21px",
-                    fontWeight: "400",
-                    backgroundColor: "#E6DDFD",
-                    margin: "5px",
-                  }}
-                >
-                  Explore buy{" "}
-                </span>
-                <img src={arrowForward} alt="arrow" className="btn3" />
-              </a>
-              <img src={image}></img>
             </div>
           </div>
         </div>
       </Section>
 
       <Testimonial />
+
+      <News/>
+
+      <div className={styles.downloadContainer}>
+        <img src={dormyAcc} alt="dormyaccpic" className={styles.dormyAcc} />
+        <div className={styles.download}>
+          <h2>Download the App</h2>
+          <p>
+            Experience the best of cardtonic on your phone or tablet. Available
+            for iOS and android operating system.
+          </p>
+          <Button size="lg" variant="black">
+            <img src={apple} alt="" />
+            Get on iphone
+          </Button>
+          <Button size="lg" variant="success">
+            <img src={playStore} alt="" />
+            Get on Android
+          </Button>
+        </div>
+      </div>
+
+      <Footer/>
     </div>
   );
 };

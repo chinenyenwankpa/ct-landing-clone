@@ -1,0 +1,38 @@
+.newsWrapper {
+    display: flex;
+    gap: 102px;
+    width: 100%;
+    max-width: 1200px;
+    height: 186px;
+    align-items: center;
+  }
+  
+  /* .news{
+    height: 50px;
+    width: 200px;
+  } */
+
+  .punch{
+    width: 130px;
+    height: 39px;
+  }
+
+  .naija{
+    width: 189px;
+    height: 51px;
+  }
+
+  .pulse{
+    width: 131px;
+    height: 66px;
+  }
+
+  .vanguard{
+    width: 172px;
+    height: 37px;
+  }
+
+  .tech{
+    width: 168px;
+    height: 43px;
+  }

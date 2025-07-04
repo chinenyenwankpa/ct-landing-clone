@@ -10,7 +10,8 @@ const Button = ({ children, size = "default", variant = "primary" }) => {
     primary: "primaryBtn",
     black: "blackBtn",
     success: "successBtn",
-    textSecondary: "textSecondaryBtn"
+    textSecondary: "textSecondaryBtn",
+    textColoured : "textColourBtn",
   };
 
   return (

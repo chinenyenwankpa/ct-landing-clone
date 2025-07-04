@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 91px;
+    color: #1B507E;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .innerfooter{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }

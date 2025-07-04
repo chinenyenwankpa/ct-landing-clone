@@ -1,33 +1,36 @@
-.testimonialWrapper {
+/* .testimonialWrapper {
     padding: 60px 0;
-  }
+  } */
   
   .heading {
     font-size: 48px;
     color: #d1e0e4;
     margin-bottom: 40px;
+    margin-top: 200px;
   }
   
   .cardGrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    /* justify-content: space-between; */
+    gap: 24px;
+    /* margin-top: 40px; */
+    margin: auto;
+    color: #1B507E;
   }
   
   .card {
     background: #f5f5f5;
     padding: 24px;
     border-radius: 20px;
-    flex: 1;
-    min-width: 280px;
-    max-width: 360px;
+    min-width: 520px;
+    max-width: 400px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   
-  .quoteMark {
-    font-size: 48px;
-    color: #7580ef;
-    margin-bottom: 10px;
+  .quote {
+    width: 41px;
+    height: 29px;
   }
   
   .text {
@@ -57,52 +60,13 @@
     font-size: 14px;
     color: #7580ef;
   }
+
+  .sourceName{
+    display: flex;
+    flex-direction: column;
+  }
   
-  .newsWrapper {
+  .sourceContainer{
     display: flex;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    height: 186px;
-  }
-
-  .news{
-    height: 50px;
-    width: 200px;
-  }
-
-  .dormyAcc{
-    height: 690px;
-    width: 720px;
-  }
-
-  .downloadContainer{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .download{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 30px 30px;
-    font-weight: 400;
-    font-size: 21px;
-    /* height: 720px;
-    width: 566px; */
-  }
-
-  .footer{
-    margin-top: 80px;
-    margin-bottom: 80px;
-    gap: 91px;
-    color: #1B507E;
-  }
-
-  .innerfooter{
-    gap: 40px;
-    display: flex;
-    flex-direction: column;
+    gap: 239px;
   }
