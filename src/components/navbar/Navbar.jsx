@@ -1,19 +1,27 @@
 import styles from "./navbar.module.css";
 
+import { useState } from "react";
 import Section from "../section/Section";
 import Button from "../button/Button";
+import GiftCardDropdown from "./components/giftCardDropdown/GiftCardDropdown";
 
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
 
 const Navbar = () => {
+  const [giftCardDropdownOpen, setGiftCardDropdownOpen] = useState(false);
+
   return (
     <nav className={styles.navbarContainer}>
       <Section>
         <div className={styles.navbar}>
           <img src={logo} alt="cardtonic logo" className={styles.logo} />
           <ul className={styles.navlist}>
-            <li>
+            <li
+              onClick={() => {
+                setGiftCardDropdownOpen((prev) => !prev);
+              }}
+            >
               <a href="#">Gift Card</a>
             </li>
             <li>
@@ -35,6 +43,7 @@ const Navbar = () => {
           </div>
         </div>
       </Section>
+      {giftCardDropdownOpen && <GiftCardDropdown />}
     </nav>
   );
 };

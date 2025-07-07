@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.container:hover {
+  background-color: #f8f8f9;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelContainer h4 {
+  font-weight: 600;
+}
+
+.labelContainer p {
+  color: #1b507e;
+}
