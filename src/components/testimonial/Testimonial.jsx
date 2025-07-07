@@ -7,90 +7,58 @@ import sellCard from "../../../src/assets/img/sellCard.webp";
 import image from "../../../src/assets/img/image.png";
 import quote from "../../assets/img/quote.png";
 
+const testimonials = [
+  {
+    name: "Ifeanyi Joseph",
+    platform: "Play Store",
+    text: "The withdrawal was quicker than I expected, keep it up guys.",
+    avatar: cards,
+  },
+  {
+    name: "Babalola Muiz",
+    platform: "App Store",
+    text: "I was able to buy a Sephora gift card within a minute. Quite impressive.",
+    avatar: image,
+  },
+  {
+    name: "Nurudeen Abdulrazak",
+    platform: "Play Store",
+    text: "I highly rate this app. I recommended it to my brothers and friends, and they also love it.",
+    avatar: sellCard,
+  },
+];
+
+
 
 const Testimonial = () => {
   return (
-    <>
-        <div className={styles.testimonialWrapper}>
-          <Section>
-            <h2 className={styles.heading}>
-            Testimonials <br />& News
-          </h2>
-          </Section>
-          
-          <div className={styles.cardGrid}>
-            {/* First Testimonial */}
-            <div className={styles.card}>
-              <img src={quote} alt="quotationmark" className={styles.quote} />
-              <p className={styles.text}>
-                The withdrawal was quicker than I expected, keep it up guys.
-              </p>
-              <div className={styles.footer}>
-                <div className={styles.sourceContainer}>
-                  <div className={styles.sourceName}>
-                    <p className={styles.name}>Ifeanyi Joseph</p>
-                    <p className={styles.source}>Play Store</p>
-                  </div>
-                  <div>
-                    <img
-                      src={cards}
-                      alt="IfeanyiJoseph"
-                      className={styles.avatar}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className={styles.testimonialWrapper}>
+      <Section>
+        <h2 className={styles.heading}>
+          Testimonials <br /> & News
+        </h2>
+      </Section>
 
-            {/* Second Testimonial */}
-            <div className={styles.card}>
+      <div className={styles.cardGrid}>
+        {testimonials.map((item, index) => (
+          <div key={index} className={styles.card}>
             <img src={quote} alt="quotationmark" className={styles.quote} />
-              <p className={styles.text}>
-                I was able to buy a Sephora gift card within a minute. Quite
-                impressive.
-              </p>
-              <div className={styles.footer}>
-                <div className={styles.sourceContainer}>
-                  <div className={styles.sourceName}>
-                    <p className={styles.name}>Babalola Muiz</p>
-                    <p className={styles.source}>App Store</p>
-                  </div>
-                  <div>
-                    <img
-                      src={image}
-                      alt="Babalola Muiz"
-                      className={styles.avatar}
-                    />
-                  </div>
+            <p className={styles.text}>{item.text}</p>
+            <div className={styles.footer}>
+              <div className={styles.sourceContainer}>
+                <div className={styles.sourceName}>
+                  <p className={styles.name}>{item.name}</p>
+                  <p className={styles.source}>{item.platform}</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Third Testimonial */}
-            <div className={styles.card}>
-            <img src={quote} alt="quotationmark" className={styles.quote} />
-              <p className={styles.text}>
-                I highly rate this app. I recommended it to my brothers and
-                friends, and they also love it.
-              </p>
-              <div className={styles.footer}>
-                <div className={styles.sourceContainer}>
-                  <div className={styles.sourceName}>
-                    <div className={styles.name}>Nurudeen Abdulrazak</div>
-                    <div className={styles.source}>Play Store</div>
-                  </div>
-                  <img
-                    src={sellCard}
-                    alt="Nurudeen Abdulrazak"
-                    className={styles.avatar}
-                  />
-                </div>
+                <img src={item.avatar} alt={item.name} className={styles.avatar} />
               </div>
             </div>
           </div>
-        </div>
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
+
 
 export default Testimonial;
