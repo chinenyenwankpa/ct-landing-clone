@@ -11,9 +11,7 @@ import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
 import ExploreDropdown from "./components/exploreDropdown/ExploreDropdown";
 
 const Navbar = () => {
-  const [giftCardDropdownOpen, setGiftCardDropdownOpen] = useState(false);
-  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
-  const [exploreDropdownOpen, setExploreDropdownOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(null);
 
   return (
     <nav className={styles.navbarContainer}>
@@ -23,22 +21,28 @@ const Navbar = () => {
           <ul className={styles.navlist}>
             <li
               onClick={() => {
-                setGiftCardDropdownOpen((prev) => !prev);
+                setDropdownOpen((prev) =>
+                  prev === "giftCard" ? null : "giftCard"
+                );
               }}
             >
               <a href="#">Gift Card</a>
             </li>
             <li
-            onClick ={() =>{
-              setServiceDropdownOpen((prev) => !prev)
-            }}
+              onClick={() => {
+                setDropdownOpen((prev) =>
+                  prev === "services" ? null : "services"
+                );
+              }}
             >
               <a href="#">Services</a>
             </li>
             <li
-            onClick ={() =>{
-              setExploreDropdownOpen((prev) => !prev)
-            }}
+              onClick={() => {
+                setDropdownOpen((prev) =>
+                  prev === "explore" ? null : "explore"
+                );
+              }}
             >
               <a href="#">Explore</a>
             </li>
@@ -55,9 +59,9 @@ const Navbar = () => {
           </div>
         </div>
       </Section>
-      {giftCardDropdownOpen && <GiftCardDropdown />}
-      {serviceDropdownOpen && <ServiceDropdown/>}
-      {exploreDropdownOpen && <ExploreDropdown/>}
+      {dropdownOpen === "giftCard" && <GiftCardDropdown />}
+      {dropdownOpen === "services" && <ServiceDropdown />}
+      {dropdownOpen === "explore" && <ExploreDropdown />}
     </nav>
   );
 };
