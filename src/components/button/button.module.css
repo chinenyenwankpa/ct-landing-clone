@@ -21,12 +21,24 @@
   background-color: #002444;
 }
 
+.primaryBtn:hover{
+  background-color: #7580EF;
+}
+
 .blackBtn {
   background-color: #000000;
 }
 
+.blackBtn:hover{
+  background-color: #252525;
+}
+
 .successBtn {
   background-color: #01983e;
+}
+.successBtn:hover{
+
+  background-color: #086C30;
 }
 
 .textSecondaryBtn {

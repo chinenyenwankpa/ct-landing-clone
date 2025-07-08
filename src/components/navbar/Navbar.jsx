@@ -4,12 +4,16 @@ import { useState } from "react";
 import Section from "../section/Section";
 import Button from "../button/Button";
 import GiftCardDropdown from "./components/giftCardDropdown/GiftCardDropdown";
+import ServiceDropdown from "./components/serviceDropdown/ServiceDropdown";
 
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
+import ExploreDropdown from "./components/exploreDropdown/ExploreDropdown";
 
 const Navbar = () => {
   const [giftCardDropdownOpen, setGiftCardDropdownOpen] = useState(false);
+  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
+  const [exploreDropdownOpen, setExploreDropdownOpen] = useState(false)
 
   return (
     <nav className={styles.navbarContainer}>
@@ -24,15 +28,23 @@ const Navbar = () => {
             >
               <a href="#">Gift Card</a>
             </li>
-            <li>
+            <li
+            onClick ={() =>{
+              setServiceDropdownOpen((prev) => !prev)
+            }}
+            >
               <a href="#">Services</a>
             </li>
-            <li>
+            <li
+            onClick ={() =>{
+              setExploreDropdownOpen((prev) => !prev)
+            }}
+            >
               <a href="#">Explore</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">Just Gadgets</a>
-            </li>
+            </li> */}
           </ul>
 
           <div className={styles.buttonContainer}>
@@ -44,6 +56,8 @@ const Navbar = () => {
         </div>
       </Section>
       {giftCardDropdownOpen && <GiftCardDropdown />}
+      {serviceDropdownOpen && <ServiceDropdown/>}
+      {exploreDropdownOpen && <ExploreDropdown/>}
     </nav>
   );
 };
