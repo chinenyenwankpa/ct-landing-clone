@@ -41,7 +41,7 @@ const Testimonial = () => {
       <div className={styles.cardGrid}>
         {testimonials.map((testimonial) => {
           return (
-            <div className={styles.card}>
+            <div key={testimonial.name} className={styles.card}>
               <img src={quote} alt="quotationmark" className={styles.quote} />
               <p className={styles.text}>{testimonial.remark}</p>
               <div className={styles.footer}>
@@ -66,6 +66,5 @@ const Testimonial = () => {
     </div>
   );
 };
-
 
 export default Testimonial;

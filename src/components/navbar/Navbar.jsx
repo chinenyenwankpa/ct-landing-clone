@@ -7,8 +7,8 @@ import Button from "../button/Button";
 import GiftCardDropdown from "./components/giftCardDropdown/GiftCardDropdown";
 import ServiceDropdown from "./components/serviceDropdown/ServiceDropdown";
 import ExploreDropdown from "./components/exploreDropdown/ExploreDropdown";
-import NavbarList from "./components/navbarList/navbarList";
-import QrDropdown from "./components/qrDropdown/QrDropdown"
+import QrDropdown from "./components/qrDropdown/QrDropdown";
+import MobileMenu from "./components/mobileDropdown/MobileMenu";
 
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
@@ -16,8 +16,8 @@ import menubar from "../../assets/img/nav/menubar.svg";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
-  const [menubarOpen, setMenubarOpen] = useState(false)
-  const [qrcodeOpen, setQrcodeOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [qrcodeOpen, setQrcodeOpen] = useState(false);
 
   return (
     <nav className={styles.navbarContainer}>
@@ -55,20 +55,22 @@ const Navbar = () => {
           </ul>
 
           <div className={styles.buttonContainer}>
-            <button className={styles.qrButton}
-            onClick={() => {
-              setQrcodeOpen((prev) => !prev)
-            }}
+            <button
+              className={styles.qrButton}
+              onClick={() => {
+                setQrcodeOpen((prev) => !prev);
+              }}
             >
               <img src={qrCodeIcon} alt="qr-code" />
             </button>
             <Button>Get Started</Button>
           </div>
 
-          <button className={styles.menuButton}
-          onClick={() => {
-            setMenubarOpen((prev) => !prev)
-          }}
+          <button
+            className={styles.menuButton}
+            onClick={() => {
+              setMobileMenuOpen((prev) => !prev);
+            }}
           >
             <img src={menubar} alt="menubar" />
           </button>
@@ -77,8 +79,8 @@ const Navbar = () => {
       {dropdownOpen === "giftCard" && <GiftCardDropdown />}
       {dropdownOpen === "services" && <ServiceDropdown />}
       {dropdownOpen === "explore" && <ExploreDropdown />}
-      {menubarOpen && <NavbarList/>}
-      {qrcodeOpen && <QrDropdown/>}
+      {mobileMenuOpen && <MobileMenu />}
+      {qrcodeOpen && <QrDropdown />}
     </nav>
   );
 };

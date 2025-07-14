@@ -1,11 +1,13 @@
-import styles from "./navbarList.module.css";
+import styles from "./mobileMenu.module.css";
 import { useState } from "react";
 import DropdownItem from "../dropdownItem/DropdownItem";
+import Button from "../../../button/Button";
 
 import globe from "../../../../assets/img/globe.svg";
 import apple from "../../../../assets/img/apple.svg";
 import playStore from "../../../../assets/img/playStore.svg";
 import plus from "../../../../assets/img/plus.svg";
+import minus from "../../../../assets/img/minus.svg";
 
 // Gift Card Icons
 import sellIcon from "../../../../assets/img/nav/giftCard/sell.svg";
@@ -32,9 +34,7 @@ import upskill from "../../../../assets/img/nav/explore/upskill.svg";
 import giveback from "../../../../assets/img/nav/explore/giveback.svg";
 import intouch from "../../../../assets/img/nav/explore/intouch.svg";
 
-import Button from "../../../button/Button";
-
-const NavbarList = () => {
+const MobileMenu = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const toggleSection = (id) => {
@@ -99,12 +99,14 @@ const NavbarList = () => {
       items: [
         {
           title: "Just Gadgets",
-          caption: "Buy affordable gadgets from the comfort of your favourite app.",
+          caption:
+            "Buy affordable gadgets from the comfort of your favourite app.",
           icon: gadget,
         },
         {
           title: "Virtual Dollar Card",
-          caption: "Shop online, pay for services, or make international purchases.",
+          caption:
+            "Shop online, pay for services, or make international purchases.",
           icon: card,
         },
         {
@@ -158,47 +160,38 @@ const NavbarList = () => {
   ];
 
   return (
-    <div>
-      <div className={styles.btnContainer}>
-        {accordionData.map(({ id, label, items }) => (
-          <div className={styles.accordionItem} key={id}>
-            <Button
-              size="nav"
-              variant="navColour"
-              onClick={() => toggleSection(id)}
-            >
-              {label}
-              <img
-                src={plus}
-                alt=""
-              />
-            </Button>
-            <div
-              className={`${styles.accordionContent} ${
-                dropdownOpen === id ? styles.show : ""
-              }`}
-            >
-              {dropdownOpen === id &&
-                items.map((item, index) => <DropdownItem key={index} {...item} />)}
-            </div>
-          </div>
-        ))}
+    <div className={styles.container}>
+      {accordionData.map(({ id, label, items }) => (
+        <div className={styles.accordionItem} key={id}>
+          <button onClick={() => toggleSection(id)}>
+            {label}
+            <img src={dropdownOpen === id ? minus : plus} alt="" />
+          </button>
 
-        <Button size="l" variant="black">
-          <img src={apple} alt="" />
-          Get on iPhone
-        </Button>
-        <Button size="l" variant="success">
-          <img src={playStore} alt="" />
-          Get on Android
-        </Button>
-        <Button size="l" variant="primary">
-          <img src={globe} alt="" />
-          Web Sign Up
-        </Button>
-      </div>
+          {dropdownOpen === id && (
+            <div className={styles.navListWrapper}>
+              {items.map((item, index) => (
+                <DropdownItem key={index} {...item} />
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+
+      <Button size="l" variant="black">
+        <img src={apple} alt="" />
+        Get on iPhone
+      </Button>
+      <Button size="l" variant="success">
+        <img src={playStore} alt="" />
+        Get on Android
+      </Button>
+      <Button size="l" variant="primary">
+        <img src={globe} alt="" />
+        Web Sign Up
+      </Button>
     </div>
   );
 };
 
-export default NavbarList;
+export default MobileMenu;
