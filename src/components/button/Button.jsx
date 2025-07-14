@@ -1,9 +1,11 @@
 import styles from "./button.module.css";
 
-const Button = ({ children, size = "default", variant = "primary" }) => {
+const Button = ({ children, size = "default", variant = "primary", onClick}) => {
   const sizeMap = {
     default: "defaultBtn",
     lg: "lgBtn",
+    l: "lBtn",
+    nav: "navBtn",
   };
 
   const variantMap = {
@@ -12,6 +14,7 @@ const Button = ({ children, size = "default", variant = "primary" }) => {
     success: "successBtn",
     textSecondary: "textSecondaryBtn",
     textColoured : "textColourBtn",
+    navColour: "navColourBtn"
   };
 
   return (
@@ -19,6 +22,7 @@ const Button = ({ children, size = "default", variant = "primary" }) => {
       className={`${styles.btn} ${styles[sizeMap[size]]} ${
         styles[variantMap[variant]]
       }`}
+      onClick={onClick}
       type="button"
     >
       {children}

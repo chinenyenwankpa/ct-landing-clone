@@ -1,17 +1,23 @@
 import styles from "./navbar.module.css";
 
 import { useState } from "react";
+
 import Section from "../section/Section";
 import Button from "../button/Button";
 import GiftCardDropdown from "./components/giftCardDropdown/GiftCardDropdown";
 import ServiceDropdown from "./components/serviceDropdown/ServiceDropdown";
+import ExploreDropdown from "./components/exploreDropdown/ExploreDropdown";
+import NavbarList from "./components/navbarList/navbarList";
+import QrDropdown from "./components/qrDropdown/QrDropdown"
 
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
-import ExploreDropdown from "./components/exploreDropdown/ExploreDropdown";
+import menubar from "../../assets/img/nav/menubar.svg";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [menubarOpen, setMenubarOpen] = useState(false)
+  const [qrcodeOpen, setQrcodeOpen] = useState(false)
 
   return (
     <nav className={styles.navbarContainer}>
@@ -46,22 +52,33 @@ const Navbar = () => {
             >
               <a href="#">Explore</a>
             </li>
-            {/* <li>
-              <a href="#">Just Gadgets</a>
-            </li> */}
           </ul>
 
           <div className={styles.buttonContainer}>
-            <button className={styles.qrButton}>
+            <button className={styles.qrButton}
+            onClick={() => {
+              setQrcodeOpen((prev) => !prev)
+            }}
+            >
               <img src={qrCodeIcon} alt="qr-code" />
             </button>
             <Button>Get Started</Button>
           </div>
+
+          <button className={styles.menuButton}
+          onClick={() => {
+            setMenubarOpen((prev) => !prev)
+          }}
+          >
+            <img src={menubar} alt="menubar" />
+          </button>
         </div>
       </Section>
       {dropdownOpen === "giftCard" && <GiftCardDropdown />}
       {dropdownOpen === "services" && <ServiceDropdown />}
       {dropdownOpen === "explore" && <ExploreDropdown />}
+      {menubarOpen && <NavbarList/>}
+      {qrcodeOpen && <QrDropdown/>}
     </nav>
   );
 };

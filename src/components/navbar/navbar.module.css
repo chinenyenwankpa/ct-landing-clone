@@ -21,7 +21,16 @@
 
 .navlist li {
   cursor: pointer;
+  /* the height is a change i made according to youtube can be removed */
+  height: 20px; 
 }
+
+.navlist li:hover{
+  background-color: #F8F8F9;
+  border-radius: 20px;
+  padding: 3px;
+}
+
 
 .buttonContainer {
   display: flex;
@@ -36,4 +45,20 @@
   align-items: center;
   background-color: #f8f8f9;
   border-radius: 50%;
+}
+
+.menuButton{
+  display: none;
+}
+
+@media screen and (max-width: 1115px) {
+  .navlist,
+  .buttonContainer {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
 }

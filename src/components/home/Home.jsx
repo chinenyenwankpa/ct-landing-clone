@@ -89,7 +89,7 @@ const Home = () => {
         <h1 className={styles.mutedheading}>Services</h1>
 
         <div className="card-container">
-          <div className={styles.card2}>
+          <div className={styles}>
             <div className={styles.column}>
               <h3>Virtual Dollar Cards</h3>
               <p>
