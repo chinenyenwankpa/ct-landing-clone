@@ -67,7 +67,7 @@ const Home = () => {
                 <img src={arrowForward} alt="arrow" />
               </Button>
             </div>
-            <img src={sellCard}></img>
+            <img src={sellCard} className={styles.sellCard}></img>
           </div>
 
           <div className={styles.card}>
@@ -82,14 +82,14 @@ const Home = () => {
                 <img src={arrowForward} alt="arrow" />
               </Button>
             </div>
-            <img src={cards}></img>
+            <img src={cards} className={styles.cards}></img>
           </div>
         </div>
 
         <h1 className={styles.mutedheading}>Services</h1>
 
         <div className="card-container">
-          <div className={styles}>
+          <div className={styles.card2}>
             <div className={styles.column}>
               <h3>Virtual Dollar Cards</h3>
               <p>
@@ -100,10 +100,10 @@ const Home = () => {
                 <img src={arrowForward} alt="arrow" />
               </Button>
             </div>
-            <img src={creditCards}></img>
+            <img src={creditCards} className={styles.creditCards}></img>
           </div>
 
-          <div className="services-card-container">
+          <div className={styles.servicesCardContainer}>
             <div className={styles.left}>
               <div className={styles.column}>
                 <h3>Just Gadgets</h3>

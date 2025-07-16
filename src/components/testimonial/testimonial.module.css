@@ -12,6 +12,7 @@
   .cardGrid {
     display: flex;
     flex-wrap: wrap;
+    /* width: 520px; */
     /* justify-content: space-between; */
     gap: 24px;
     /* margin-top: 40px; */
@@ -69,4 +70,10 @@
   .sourceContainer{
     display: flex;
     gap: 239px;
+  }
+
+  @media screen and (max-width: 744px) {
+    .heading{
+      margin-top: 120px;
+    }
   }

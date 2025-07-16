@@ -37,38 +37,6 @@ button {
   cursor: pointer;
 }
 
-/* .header {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* img {
-  width: 170px;
-  height: 25.01px;
-} */
-
-/* .qr-btn {
-  padding: 2px;
-  background-color: #f8f8f9;
-  border-radius: 200px;
-  height: 48px;
-  width: 48px;
-  margin: 16px;
-} */
-
-/* .btn {
-  padding: 20px;
-  background-color: #002444;
-  color: white;
-  border-radius: 50px;
-  display: inline-block;
-  text-decoration: none;
-  height: 10px;
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-} */
-
 .section-2 {
   display: flex;
   justify-content: center;
@@ -76,15 +44,6 @@ button {
   flex-direction: column;
   margin: 50px;
 }
-
-/* .btn1 {
-  padding: 5px;
-  background-color: #7580ef;
-  border-radius: 50px;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-} */
 
 .big-text {
   color: #002444;
@@ -105,30 +64,15 @@ button {
   margin: 30px;
 }
 
-/* video {
-  margin: 30px;
-  border-radius: 50px;
-  height: 600px;
-} */
-
-
-
-
-
-/* .btn3 {
-  height: 16px;
-  width: 16px;
-  margin-left: 8px;
-} */
-
-
-
 .btn3 img {
   height: 4px;
   width: 4px;
 }
-.services-card-container {
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
+
+@media screen and (max-width:744px) {
+  *{
+    padding: none;
+    margin: none;
+  }
+  
 }

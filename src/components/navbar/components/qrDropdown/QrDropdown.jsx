@@ -1,6 +1,6 @@
 import styles from "./qrDropdown.module.css"
 
-import qrcode from "../../../../assets/img/qr-code-icon.svg"
+import code from "../../../../assets/img/code.svg"
 import apple from "../../../../assets/img/apple.svg"
 import playStore from "../../../../assets/img/playStore.svg"
 
@@ -8,10 +8,10 @@ const QrDropdown = () => {
     return(
         <div className={styles.wrapper}>
           <div className={styles.container}>
-            <img src={qrcode} alt="" />
-            <div>
-                <img src={apple} alt="" />
-                <img src={playStore} alt="" />
+            <img src={code} alt="" />
+            <div className={styles.outerContainer}>
+                <img src={apple} alt="" className={styles.innerCircle}/>
+                <img src={playStore} alt="" className={styles.innerCircle}/>
             </div>
         </div>  
         </div>

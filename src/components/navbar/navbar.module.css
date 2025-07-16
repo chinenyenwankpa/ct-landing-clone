@@ -31,7 +31,6 @@
   padding: 3px;
 }
 
-
 .buttonContainer {
   display: flex;
   align-items: center;
@@ -45,6 +44,7 @@
   align-items: center;
   background-color: #f8f8f9;
   border-radius: 50%;
+  position: relative;
 }
 
 .menuButton{

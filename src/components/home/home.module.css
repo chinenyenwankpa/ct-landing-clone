@@ -37,7 +37,7 @@
 
 .mutedheading {
   color: #d1e0e4;
-  font-size: 60px;
+  font-size: 64px;
   font-weight: 600;
   margin-top: 200px;
 }
@@ -77,23 +77,23 @@
   text-align: left;
   border-radius: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 700px;
 }
 
 .card img {
-  background-color: #e5f9fb;
-  max-width: 100%;
+  background-color: none;
+  max-width: 716px;
   height: auto;
   object-fit: contain;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
-
 
 .card2 {
   display: flex;
   background: #ffe7df;
   padding: 20px;
   margin-top: 40px;
-  height: 500px;
+  height: 400px;
   text-align: left;
   border-radius: 30px;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
@@ -105,7 +105,6 @@
   object-fit: contain;
   border-radius: 20px;
 }
-
 
 .column {
   display: flex;
@@ -127,23 +126,14 @@
   margin-bottom: 64px;
 }
 
-/* .column p .whiteP{
-  color: white;
-} */
-
-/* .giftCard,
-.services {
-  padding: 100px 0;
-} */
- 
 .left {
   display: flex;
   flex-direction: column;
   border-radius: 40px;
-  /* height: 800px; */
+  height: 800px;
   background-color: #002444;
   /* margin: 10px; */
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
 }
 
@@ -164,19 +154,20 @@
   /* margin: 10px; */
 }
 
-.dormyAcc{
+.dormyAcc {
   height: 690px;
   width: 720px;
+  /* padding: 0;
+  margin: 0; */
 }
 
-
-.downloadContainer{
+.downloadContainer {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.download{
+.download {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,4 +177,144 @@
   font-size: 21px;
   /* height: 720px;
   width: 566px; */
+}
+
+.servicesCardContainer {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 744px) {
+  .videoWrapper {
+  }
+
+  .mutedheading {
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 120px;
+  }
+
+  .card {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    flex-direction: column;
+    max-width: 664px;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.card2 {
+  display: flex;
+  background: #ffe7df;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 40px;
+  height: 700px;
+  text-align: left;
+  /* overflow: hidden; */
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card2 img {
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  background-color: none;
+  max-width: 330px;
+  
+}
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    padding: 60px;
+    background-color: transparent;
+  }
+
+  .column h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .column p {
+    font-size: 21px;
+    color: #1b507e;
+    margin-bottom: 64px;
+  }
+
+.left {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  height: 700px;
+  background-color: #002444;
+  /* margin: 10px; */
+  color: #ffffff;
+  width: 100%;
+  max-width: 644px;
+}
+
+.leftImg {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  height: 700px;
+  background-color: #e6ddfd;
+  /* margin: 10px; */
+}
+
+.servicesCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+.downloadContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.sellCard{
+  background-color: none;
+    max-width: 501px;
+    height: auto;
+    /* margin: 20px 81px 30px 81px; */
+    object-fit: contain;
+    padding: 2px 81px 30px 81px;
+}
+
+.cards{
+  background-color: none;
+  max-width: 501px;
+  height: auto;
+  object-fit:cover;
+}
+
+.creditCards{
+  margin: 0 120px;
+}
+
+.left{
+  overflow: hidden;
+}
+
+.right{
+  overflow: hidden;
+}
 }

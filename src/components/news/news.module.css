@@ -11,3 +11,11 @@
   width: 189px;
   object-fit: contain;
 }
+
+@media screen and(max-width) {
+  .newsWrapper img{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
