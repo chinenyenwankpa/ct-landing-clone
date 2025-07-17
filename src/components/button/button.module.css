@@ -12,7 +12,7 @@
   padding: 13px 37px;
 }
 
-.lBtn{
+.lBtn {
   padding: 40px 150px;
   border-radius: 50px;
 }
@@ -22,13 +22,13 @@
   border-radius: 100px;
 }
 
-.navBtn{
+.navBtn {
   padding: 32px 24px;
   border-radius: 20px;
 }
 
-.navColourBtn{
-  background-color: #F8F8F9;
+.navColourBtn {
+  background-color: #f8f8f9;
   color: #002444;
   font-weight: 400;
   justify-content: space-between;
@@ -38,15 +38,15 @@
   background-color: #002444;
 }
 
-.primaryBtn:hover{
-  background-color: #7580EF;
+.primaryBtn:hover {
+  background-color: #7580ef;
 }
 
 .blackBtn {
   background-color: #000000;
 }
 
-.blackBtn:hover{
+.blackBtn:hover {
   background-color: #252525;
 }
 
@@ -54,8 +54,8 @@
   background-color: #01983e;
 }
 
-.successBtn:hover{
-  background-color: #086C30;
+.successBtn:hover {
+  background-color: #086c30;
 }
 
 .textSecondaryBtn {
@@ -66,50 +66,16 @@
   gap: 8px;
 }
 
-.textColourBtn{
+.textColourBtn {
   padding: 0;
-  color: #00CEDE;
+  color: #00cede;
   background-color: transparent;
   justify-content: start;
   gap: 8px;
 }
 
-@media screen and (max-width: 393px) {
-  .lBtn{
-  padding: 32px 5px;
-  border-radius: 50px;
-  display: flex;
-}
-}
-
-@media screen and (max-width: 728px) {
-  .lgBtn{
-  padding: 32px 5px;
-  border-radius: 50px;
-  display: flex;
-}
-}
-
 @media screen and (max-width: 996px) {
-  .lgBtn{
-  padding: 32px 5px;
-  border-radius: 50px;
-  display: flex;
-}
-}
-
-@media screen and (max-width: 1200px) {
-  .lgBtn{
-  padding: 32px 40px;
-  border-radius: 50px;
-  display: flex;
-}
-}
-
-@media screen and (max-width: 744px) {
-  .lgBtn{
-  padding: 30px 35px;
-  border-radius: 50px;
-  display: flex;
-}
+  .lgBtn {
+    padding: 32px 60px;
+  }
 }

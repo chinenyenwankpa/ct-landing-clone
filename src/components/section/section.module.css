@@ -1,20 +1,17 @@
 .section {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 @media screen and (max-width: 744px) {
-    .section{
-        width: 100%;
-        margin: auto;
-    }
+  .section {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .section{
-        width: 100%;
-        margin: auto;
-        padding: auto;
-    }
+  .section {
+    padding: 0 40px;
+  }
 }
