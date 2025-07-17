@@ -23,8 +23,6 @@
 }
 
 .navBtn{
-  /* width: 345px;
-  height: 88px; */
   padding: 32px 24px;
   border-radius: 20px;
 }
@@ -79,6 +77,38 @@
 @media screen and (max-width: 393px) {
   .lBtn{
   padding: 32px 5px;
+  border-radius: 50px;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 728px) {
+  .lgBtn{
+  padding: 32px 5px;
+  border-radius: 50px;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 996px) {
+  .lgBtn{
+  padding: 32px 5px;
+  border-radius: 50px;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .lgBtn{
+  padding: 32px 40px;
+  border-radius: 50px;
+  display: flex;
+}
+}
+
+@media screen and (max-width: 744px) {
+  .lgBtn{
+  padding: 30px 35px;
   border-radius: 50px;
   display: flex;
 }

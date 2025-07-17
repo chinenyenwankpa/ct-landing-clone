@@ -31,3 +31,6 @@ const Button = ({ children, size = "default", variant = "primary", onClick}) => 
 };
 
 export default Button;
+
+
+// 1200, -> 996, ->728, ->600
