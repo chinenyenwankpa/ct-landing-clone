@@ -13,11 +13,25 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 768px) {
   .footer {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 5px;
+    display: grid;
+  }
+}
+
+/* @media screen and (max-width: 996px) {
+  .footer {
+    
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
