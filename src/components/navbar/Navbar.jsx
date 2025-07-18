@@ -76,6 +76,7 @@ const Navbar = () => {
           </button>
         </div>
       </Section>
+      
       {dropdownOpen === "giftCard" && <GiftCardDropdown />}
       {dropdownOpen === "services" && <ServiceDropdown />}
       {dropdownOpen === "explore" && <ExploreDropdown />}

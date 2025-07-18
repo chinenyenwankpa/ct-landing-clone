@@ -51,7 +51,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1200px) {
   .navlist,
   .buttonContainer {
     display: none;

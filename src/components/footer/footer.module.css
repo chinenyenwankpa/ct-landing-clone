@@ -16,24 +16,20 @@
 @media screen and (max-width: 768px) {
   .footer {
     grid-template-columns: repeat(2, 1fr);
-    margin: 5px;
-    display: grid;
+    
   }
 }
 
-/* @media screen and (max-width: 996px) {
+@media screen and (max-width: 1200px) {
   .footer {
-    
+    margin: 5px;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     
   }
-} */
-
-@media screen and (max-width: 600px) {
-  .footer {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
+
+
 
 @media screen and (max-width: 393px) {
   .footer {
