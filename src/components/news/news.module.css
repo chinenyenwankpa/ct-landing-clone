@@ -1,6 +1,5 @@
 .newsWrapper {
-  /* display: flex; */
-  
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 61px 0 70px 0;
@@ -13,10 +12,18 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 996) {
+@media screen and (max-width: 996px) {
   .newsWrapper {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newsWrapper {
+    grid-template-columns: 1fr;
   }
 }
