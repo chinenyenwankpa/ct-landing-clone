@@ -16,7 +16,7 @@ import arrowIcon from "../../assets/img/arrow-icon.svg";
 import dormyAcc from "../../assets/img/dormyAcc.png";
 import apple from "../../assets/img/apple.svg";
 import playStore from "../../assets/img/playStore.svg";
-import vector from "../../assets/img/vector.svg"
+import vector from "../../assets/img/vector.svg";
 
 const Home = () => {
   return (
@@ -57,33 +57,31 @@ const Home = () => {
       <Section className={styles.giftCard}>
         <h1 className={styles.mutedheading}>Gift Cards</h1>
 
-        <div className="card-container">
-          <div className={styles.card}>
-            <div className={styles.column}>
-              <h3>Sell Gift Cards </h3>
-              <p>Instantly convert the gift cards you don't nee to cash. </p>
-              <Button variant="textSecondary">
-                <span>Explore sell </span>
-                <img src={arrowForward} alt="arrow" />
-              </Button>
-            </div>
-            <img src={sellCard} className={styles.sellCard}></img>
+        <div className={styles.card}>
+          <div className={styles.column}>
+            <h3>Sell Gift Cards </h3>
+            <p>Instantly convert the gift cards you don't nee to cash. </p>
+            <Button variant="textSecondary">
+              <span>Explore sell </span>
+              <img src={arrowForward} alt="arrow" />
+            </Button>
           </div>
+          <img src={sellCard} className={styles.sellCard}></img>
+        </div>
 
-          <div className={styles.card}>
-            <div className={styles.column}>
-              <h3>Buy Gift Cards </h3>
-              <p>
-                Over 14,000 local and international gift cards are available for
-                purchase{" "}
-              </p>
-              <Button variant="textSecondary">
-                <span>Explore buy </span>
-                <img src={arrowForward} alt="arrow" />
-              </Button>
-            </div>
-            <img src={cards} className={styles.cards}></img>
+        <div className={styles.card}>
+          <div className={styles.column}>
+            <h3>Buy Gift Cards </h3>
+            <p>
+              Over 14,000 local and international gift cards are available for
+              purchase{" "}
+            </p>
+            <Button variant="textSecondary">
+              <span>Explore buy </span>
+              <img src={arrowForward} alt="arrow" />
+            </Button>
           </div>
+          <img src={cards} className={styles.sellCard}></img>
         </div>
 
         <h1 className={styles.mutedheading}>Services</h1>
@@ -100,7 +98,7 @@ const Home = () => {
                 <img src={arrowForward} alt="arrow" />
               </Button>
             </div>
-            <img src={creditCards} className={styles.creditCards}></img>
+            <img src={creditCards} />
           </div>
 
           <div className={styles.servicesCardContainer}>
@@ -115,9 +113,8 @@ const Home = () => {
                   <img src={vector} alt="arrow" />
                 </Button>
               </div>
-              <div>
-                <img src={cards} className={styles.leftImg}></img>
-              </div>
+
+              <img src={cards} className={styles.leftImg}></img>
             </div>
 
             <div className={styles.right}>
@@ -129,9 +126,8 @@ const Home = () => {
                   <img src={arrowForward} alt="arrow" />
                 </Button>
               </div>
-              <div>
-                <img src={image} className={styles.leftImg}></img>
-              </div>
+
+              <img src={image} className={styles.leftImg}></img>
             </div>
           </div>
         </div>
@@ -139,7 +135,7 @@ const Home = () => {
 
       <Testimonial />
 
-      <News/>
+      <News />
 
       <div className={styles.downloadContainer}>
         <img src={dormyAcc} alt="dormyaccpic" className={styles.dormyAcc} />
@@ -160,7 +156,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
