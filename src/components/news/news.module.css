@@ -1,6 +1,4 @@
 .newsWrapper {
-  /* display: flex; */
-  
   align-items: center;
   justify-content: space-between;
   margin: 61px 0 70px 0;
@@ -13,7 +11,7 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 996) {
+@media screen and (max-width: 996PX) {
   .newsWrapper {
     height: auto;
     display: grid;
