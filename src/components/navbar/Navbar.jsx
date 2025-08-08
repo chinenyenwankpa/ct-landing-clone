@@ -13,11 +13,14 @@ import MobileMenu from "./components/mobileDropdown/MobileMenu";
 import logo from "../../assets/img/Logo.png";
 import qrCodeIcon from "../../assets/img/qr-code-icon.svg";
 import menubar from "../../assets/img/nav/menubar.svg";
+import Faq from "./components/faq/Faq";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [qrcodeOpen, setQrcodeOpen] = useState(false);
+  const [faqOpen, setFaqOpen] = useState(false);
+
 
   return (
     <nav className={styles.navbarContainer}>
@@ -52,6 +55,13 @@ const Navbar = () => {
             >
               <a href="#">Explore</a>
             </li>
+            <li
+              onClick={() => {
+                setFaqOpen((prev) => !prev);
+              }}
+            >
+              <a href="#">FAQ</a>
+            </li>
           </ul>
 
           <div className={styles.buttonContainer}>
@@ -82,6 +92,7 @@ const Navbar = () => {
       {dropdownOpen === "explore" && <ExploreDropdown />}
       {mobileMenuOpen && <MobileMenu />}
       {qrcodeOpen && <QrDropdown />}
+      {faqOpen && <Faq/>}
     </nav>
   );
 };

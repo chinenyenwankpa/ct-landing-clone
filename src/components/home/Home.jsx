@@ -102,7 +102,7 @@ const Home = () => {
           </div>
 
           <div className={styles.servicesCardContainer}>
-            <div className={styles.left}>
+            <div className={styles.justGadjet}>
               <div className={styles.column}>
                 <h3>Just Gadgets</h3>
                 <p className={`{styles.whiteP}`}>
@@ -114,7 +114,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <img src={cards} className={styles.leftImg}></img>
+              <img src={cards} className={styles.justGadjetImg}></img>
             </div>
 
             <div className={styles.right}>
@@ -127,7 +127,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <img src={image} className={styles.leftImg}></img>
+              <img src={image} className={styles.justGadjetImg}></img>
             </div>
           </div>
         </div>

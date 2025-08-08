@@ -1,12 +1,14 @@
-/* .testimonialWrapper {
-    padding: 60px 0;
-  } */
-
 .heading {
   font-size: 48px;
   color: #d1e0e4;
   margin-bottom: 40px;
   margin-top: 200px;
+}
+
+.swiperSlide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardGrid {

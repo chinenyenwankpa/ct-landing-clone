@@ -21,7 +21,6 @@
 
 .navlist li {
   cursor: pointer;
-  /* the height is a change i made according to youtube can be removed */
   height: 20px; 
 }
 
