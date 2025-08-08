@@ -11,7 +11,7 @@ import Section from "../section/Section";
 
 import cards from "../../../src/assets/img/cards.webp";
 import sellCard from "../../../src/assets/img/sellCard.webp";
-import image from "../../../src/assets/img/image.png";
+import phoneImage from "../../../src/assets/img/phoneImage.png";
 import quote from "../../assets/img/quote.png";
 
 const Testimonial = () => {
@@ -25,7 +25,7 @@ const Testimonial = () => {
     {
       name: "Babalola Muiz",
       store: "App Store",
-      avatar: image,
+      avatar: phoneImage,
       remark:
         "I was able to buy a Sephora gift card within a minute. Quite impressive.",
     },
@@ -45,7 +45,7 @@ const Testimonial = () => {
     {
       name: "Babalola Muiz",
       store: "App Store",
-      avatar: image,
+      avatar: phoneImage,
       remark:
         "I was able to buy a Sephora gift card within a minute. Quite impressive.",
     },

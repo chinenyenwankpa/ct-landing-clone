@@ -11,7 +11,7 @@ import cards from "../../assets/img/cards.webp";
 import sellCard from "../../assets/img/sellCard.webp";
 import arrowForward from "../../assets/img/arrow.svg";
 import creditCards from "../../assets/img/creditCards.webp";
-import image from "../../assets/img/Image.png";
+import phoneImage from "../../assets/img/phoneImage.png";
 import arrowIcon from "../../assets/img/arrow-icon.svg";
 import dormyAcc from "../../assets/img/dormyAcc.png";
 import apple from "../../assets/img/apple.svg";
@@ -127,7 +127,7 @@ const Home = () => {
                 </Button>
               </div>
 
-              <img src={image} className={styles.justGadjetImg}></img>
+              <img src={phoneImage} className={styles.justGadjetImg}></img>
             </div>
           </div>
         </div>
