@@ -50,7 +50,7 @@ const Home = () => {
 
       <Section>
         <div className={styles.videoWrapper}>
-          <video src="seyi.mp4" className={styles.video} />
+          <video src="/videos/seyi.mp4" className={styles.video} />
         </div>
       </Section>
 
